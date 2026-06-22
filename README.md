@@ -17,7 +17,6 @@ I enjoy understanding how things work from the ground up — from low-level embe
 ---
 
 
-
 ## 🧠 Languages
 
 [![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](https://github.com/Kunalsingh7116-git)
