@@ -12,7 +12,7 @@ I enjoy understanding how things work from the ground up — from low-level embe
 
 - 🏆 **Goldman Sachs Hackathon 2026** — Top 2.5% out of 20,000+ participants
 - 🌍 **HPAIR Delegate** — Selected for Harvard's global leadership conference on AI & emerging tech
-- 🧠 **LeetCode** — 160+ problems solved in C++ (Trees, Graphs, DP, Backtracking)
+- 🧠 **LeetCode** — 200+ problems solved in C++ (Trees, Graphs, DP, Backtracking)
 
 ---
 
