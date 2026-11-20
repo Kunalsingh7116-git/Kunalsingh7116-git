@@ -8,60 +8,127 @@
 
 ## 🚀 About Me
 
-I enjoy understanding how systems work from the ground up — from low-level embedded firmware and computer architecture to full-stack web apps, databases, and now AI/ML engineering. I'm particularly focused on **production-grade RAG systems**, **cost-efficient infrastructure**, and **systems thinking**. Most of my time goes into DSA, systems-oriented projects, and building scalable applications that balance performance, cost, and reliability.
+I enjoy understanding how systems work from the ground up — from low-level embedded firmware and computer architecture to full-stack web apps, databases, and now AI/ML engineering. I'm particularly focused on **full-stack development**, **backend engineering**, and **systems thinking**. Most of my time goes into DSA, systems-oriented projects, and building scalable applications that balance performance, cost, and reliability.
 
 - 🏆 **Goldman Sachs Hackathon 2026** — Top 2.5% out of 20,000+ participants
 - 🌍 **HPAIR Delegate** — Selected for Harvard's global leadership conference on AI & emerging tech
 - 🧠 **LeetCode** — 200+ problems solved in C++ (Trees, Graphs, DP, Backtracking)
-- 🤖 **AI/ML Engineering** — Building cost-efficient RAG applications with comprehensive evaluation pipelines
+- 💻 **SDE Internships** — Seeking opportunities to apply C++, DSA, backend development, and full-stack engineering
+- 🥗 **Full-Stack Development** — Building NutriScan for web and Android, and Coy Discover with React, Express, and SQLite
+- 🤖 **AI/ML Engineering** — Exploring vision API integrations, RAG systems, and evaluation workflows
+- ⚡ **Embedded Systems** — Building and improving an Arduino-based temperature-controlled fan
 
 ---
 
 ## 🎯 Featured Projects
 
-### 🔬 **Cost-Efficient RAG Application with LLM-as-Judge Evaluation**
-**[Repository](https://github.com/Kunalsingh7116-git/rag-assignment)** | **Status: Production-Ready**
+### 🥗 **NutriScan — AI-Powered Meal Logging & Nutrition Tracking**
+**[Repository](https://github.com/Kunalsingh7116-git/nutriscan)** | **[Live App](https://nutriscan-six-theta.vercel.app/)** | **[Screenshots](https://github.com/Kunalsingh7116-git/nutriscan/blob/main/docs/screenshots/README.md)**
 
-A comprehensive retrieval-augmented generation (RAG) system demonstrating production engineering at scale.
+A full-stack application that turns meal photos into reviewable nutrition estimates, with a reusable Food Library across web and Android.
 
-**Key Achievements:**
-- ✅ **94-97% cost savings** vs managed services (LanceDB self-hosted vs Pinecone Pro)
-- ✅ **85% Recall@5** with strong nDCG@5 (0.68) and Context Precision (80%)
-- ✅ **4.2/5 Faithfulness score** with minimal hallucination (<5%)
-- ✅ **600ms p95 latency** (E2E including judge evaluation)
-- ✅ **92% judge consistency** across repeated evaluations
-- ✅ **Position bias mitigated** (flip rate 8%→3%)
+**Key Features:**
+- ✅ **Photo-based meal analysis** using Gemini or OpenAI, with food and portion review before logging
+- ✅ **Food Library** for saving photo meals and logging them again with adjusted portions
+- ✅ **Daily nutrition dashboard** with calorie and macro totals, meal history, and a seven-day calorie chart
+- ✅ **JWT authentication** with email/password and optional Google sign-in
+- ✅ **Android companion app** with camera/file selection and native Google sign-in support
 
 **Technical Stack:**
-- **Vector Store:** LanceDB (self-hosted, Arrow-native)
-- **Embeddings:** all-MiniLM-L6-v2 (384-dim, local inference)
-- **Retrieval:** Dense search + CrossEncoder reranking (+17% Recall improvement)
-- **LLM:** Claude 3.5 Sonnet (production) / Gemini Flash (development)
-- **Judge:** Claude 3.5 Sonnet with structured verdicts (faithfulness, relevance, completeness)
-- **Metrics:** Recall@k, MRR, nDCG@k, Context Precision, Hit Rate, LLM-based answer quality
-- **Framework:** FastAPI, Pydantic, LanceDB, sentence-transformers
-- **Infrastructure:** Docker-ready, config-driven (dev/prod modes)
-
-**Scale Analysis:**
-| Vectors | LanceDB | Pinecone Pro | Savings |
-|---------|---------|--------------|---------|
-| 100K | $15/mo | $299/mo | **95% cheaper** |
-| 1M | $50/mo | $1500/mo | **94% cheaper** |
-| 10M | $200/mo | $7500/mo | **97% cheaper** |
-
-**Design Decisions:**
-- Chunk size optimization: 500 tokens (vs 300 fragmented / 1000 noisy)
-- Idempotent re-ingestion using SHA-256 chunk hashing
-- Context-only prompting to prevent hallucinations
-- Separate judge/generator to reduce self-enhancement bias
-- Multi-scale cost comparison with clear assumptions
+- **Frontend:** React 18, React Router, Axios, Recharts
+- **Backend:** Node.js, Express, JWT, bcrypt
+- **Database:** MongoDB with Mongoose
+- **AI Integration:** Gemini / OpenAI vision APIs
+- **Android:** Java, Android WebView, AndroidX Credential Manager
+- **Deployment:** Vercel
 
 **What This Project Demonstrates:**
-1. **Systems thinking:** Choosing cost-efficient infrastructure without sacrificing quality
-2. **Honest evaluation:** Not inflating metrics; realistic scores (4.2/5 not 5/5)
-3. **Production readiness:** Docker support, config-driven, auditable logs
-4. **Bias awareness:** Position bias reduction (8%→3%), inter-run agreement tracking
-5. **Reproducibility:** Anyone can clone and run in <10 minutes
+1. **Full-stack development:** Connecting frontend interfaces, backend APIs, and persistent data
+2. **API integration:** Turning AI-generated estimates into a review-and-save workflow
+3. **Cross-platform integration:** Sharing one backend between web and Android clients
+
+---
+
+### 💌 **Coy Discover — Interactive Profile Discovery & Matching**
+**[Repository & Walkthrough](https://github.com/Kunalsingh7116-git/coy-discover)** | **Status: Working Demo**
+
+An interactive discovery app with 30 illustrated profiles, swipe gestures, profile previews, conversation starters, and mutual matches.
+
+**Key Features:**
+- ✅ **Swipe to like or pass**, press-and-hold previews, and editable conversation starters
+- ✅ **Persistent swipe decisions** and mutual matches stored through SQLite
+- ✅ **Duplicate-swipe protection** using a unique database key, including simultaneous requests
+- ✅ **Server-side incoming likes** and validation of swipe requests
+- ✅ **API tests** covering privacy, invalid input, concurrent swipes, persistence, and matching
+- ✅ **Reduced-motion support**, visual feedback, and haptics on supported devices
+
+**Technical Stack:**
+- **Frontend:** React, JavaScript, pointer gestures
+- **Backend:** Node.js, Express, REST APIs
+- **Database:** SQLite
+- **Testing:** Node.js test runner
+
+**What This Project Demonstrates:**
+1. **Frontend engineering:** Responsive interactions and UI state management
+2. **Backend reliability:** Input validation, database constraints, and persistence
+3. **Testing:** Checking API behavior and concurrent requests
+
+*Conversation-starter messages are saved locally for the demo.*
+
+---
+
+### 🌡️ **Smart Temperature-Controlled Fan — Arduino Automation**
+**[Repository](https://github.com/Kunalsingh7116-git/Smart-Temperature-Controlled-Ceiling-Fan)** | **Status: Working Prototype · Ongoing Development**
+
+An independent hardware project that automatically adjusts a 12V DC cooling fan's speed according to ambient temperature.
+
+**Key Features:**
+- ✅ **DHT22 temperature and humidity sensing**
+- ✅ **PWM-based fan speed control** through an L298N motor driver
+- ✅ **Arduino UNO firmware** written in embedded C/C++
+- ✅ **LCD/serial monitoring** for sensor readings and system information
+- ✅ **Hands-on circuit assembly, testing, and hardware troubleshooting**
+
+**Technical Stack:**
+- **Controller:** Arduino UNO
+- **Sensors & Hardware:** DHT22, L298N, 12V DC fan, I2C LCD
+- **Programming:** Embedded C/C++, Arduino IDE
+- **Control & Communication:** PWM, I2C
+
+**What This Project Demonstrates:**
+1. **System integration:** Connecting sensors, firmware, and motor control
+2. **Problem solving:** Debugging circuits, power connections, and control behavior
+3. **Iterative engineering:** Taking an independent idea to a working prototype
+
+**Next Steps:** Smoother speed control, energy monitoring, and IoT connectivity.
+
+---
+
+### 🔬 **Cost-Efficient RAG Application with LLM-as-Judge Evaluation**
+**[Repository](https://github.com/Kunalsingh7116-git/rag-assignment)**
+
+A document question-answering project exploring local vector storage, retrieval, reranking, and answer evaluation.
+
+**Key Features:**
+- ✅ **Document ingestion and vector search** using LanceDB and local MiniLM embeddings
+- ✅ **Cross-encoder reranking** to refine retrieved context
+- ✅ **Claude/Gemini integrations** for answer generation
+- ✅ **Retrieval evaluation** with Recall@k, MRR, nDCG, and Context Precision
+- ✅ **LLM-as-Judge evaluation workflow** for faithfulness, relevance, and completeness
+- ✅ **Configuration-driven development and production modes**
+
+**Technical Stack:**
+- **Language & APIs:** Python, FastAPI, Pydantic
+- **Vector Store:** LanceDB
+- **Embeddings & Reranking:** sentence-transformers, MiniLM, CrossEncoder
+- **LLMs:** Claude / Gemini
+
+**What This Project Demonstrates:**
+1. **Systems thinking:** Exploring retrieval quality and infrastructure tradeoffs
+2. **AI engineering:** Connecting document ingestion, retrieval, and generation
+3. **Evaluation:** Separating retrieval metrics from answer-quality assessment
+
+*LLM answer-quality evaluation was limited by Gemini free-tier quota, as documented in the project.*
 
 ---
 
@@ -128,7 +195,10 @@ A comprehensive retrieval-augmented generation (RAG) system demonstrating produc
 
 **Software Engineering:**
 - Full-stack development (frontend, backend, database)
-- API design (FastAPI, REST)
+- API design (Express, FastAPI, REST)
+- Authentication (JWT, Google sign-in)
+- Database modeling (MongoDB, SQLite)
+- API testing and concurrent-request handling
 - Data validation (Pydantic)
 - Error handling and fallback strategies
 - Comprehensive testing and reproducibility
@@ -157,4 +227,4 @@ A comprehensive retrieval-augmented generation (RAG) system demonstrating produc
 
 ---
 
-**Last Updated:** July 2026 | Always open to discussing systems design, AI/ML engineering, and production challenges!
+**Last Updated:** November 2026 | Always open to discussing systems design, AI/ML engineering, and production challenges!
