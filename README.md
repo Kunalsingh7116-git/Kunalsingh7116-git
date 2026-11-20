@@ -12,7 +12,7 @@ I enjoy understanding how systems work from the ground up — from low-level emb
 
 - 🏆 **Goldman Sachs Hackathon 2026** — Top 2.5% out of 20,000+ participants
 - 🌍 **HPAIR Delegate** — Selected for Harvard's global leadership conference on AI & emerging tech
-- 🧠 **LeetCode** — 200+ problems solved in C++ (Trees, Graphs, DP, Backtracking)
+- 🧠 **LeetCode** — 300+ problems solved in C++ (Trees, Graphs, DP, Backtracking)
 - 💻 **SDE Internships** — Seeking opportunities to apply C++, DSA, backend development, and full-stack engineering
 - 🥗 **Full-Stack Development** — Building NutriScan for web and Android, and Coy Discover with React, Express, and SQLite
 - 🤖 **AI/ML Engineering** — Exploring vision API integrations, RAG systems, and evaluation workflows
