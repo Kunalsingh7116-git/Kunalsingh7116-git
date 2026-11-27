@@ -1,6 +1,6 @@
 # Kunal Singh
 
-### Instrumentation & Control Engineering @ NSUT Delhi | Full-Stack Dev | AI/ML Systems Engineer
+### Undergrad @ NSUT Delhi | Full-Stack Dev | AI/ML Systems Engineer
 
 ![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Data+Structures+%26+Algorithms;Backend+Development;AI%2FML+Engineering;RAG+Systems;Vector+Databases;Systems+Design&font=Fira+Code&center=true&width=600&height=45&color=58A6FF&vCenter=true&pause=1000&size=22)
 
